@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: clamp(30px, 5vw, 50px);
+}
+
+header p {
+  margin: 10px 0 0;
+  font-size: 18px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: white;
+  padding: 15px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+/* MAIN CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+/* ABOUT */
+.about {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+/* PROFILE CARD */
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.profile-card img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h2 {
+  margin-top: 0;
+}
+
+.role {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* SKILLS */
+#skills {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+#skills h2 {
+  text-align: center;
+}
+
+/* THREE CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background-color: #f2f2f2;
+  padding: 25px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+.card p {
+  line-height: 1.5;
+}
+
+/* CONTACT */
+.contact {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  /* Navigation becomes vertical */
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Profile becomes vertical */
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Three cards become one column */
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    width: 95%;
+  }
+}
