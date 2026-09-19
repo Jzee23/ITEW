@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoStride - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">NeoStride</h1>
+
+            <div class="nav-links">
+                <a href="index.html">⌂ Home</a>
+                <a href="products.html">☰ Products</a>
+                <a href="products.html">🛒 Cart</a>
+                <button id="darkButton">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-text">
+                <p class="tagline">SMART. COMFORTABLE. ACTIVE.</p>
+
+                <h2>Step Into The Future</h2>
+
+                <p>
+                    NeoStride creates smart footwear designed for
+                    comfort, style, and an active lifestyle.
+                </p>
+
+                <a href="products.html" class="button">
+                    View Products
+                </a>
+            </div>
+
+            <figure class="hero-image">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
+                     alt="Modern running shoe">
+            </figure>
+        </section>
+
+        <section class="about">
+            <h2>About NeoStride</h2>
+
+            <p>
+                NeoStride is a footwear business focused on combining
+                modern technology with comfort and style. Our products
+                are designed for people who enjoy an active lifestyle.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NeoStride. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const button = document.getElementById("darkButton");
+
+        button.addEventListener("click", function () {
+            document.body.classList.toggle("dark");
+        });
+    </script>
+
+</body>
+</html>
+```
